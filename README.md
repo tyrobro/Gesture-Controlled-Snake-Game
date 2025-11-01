@@ -4,8 +4,6 @@ This is the classic Snake game built in Python, but with a modern twist: **you c
 
 Using your webcam, this program identifies your hand and translates your swipe gestures into commands for the snake. It uses Pygame for the game logic and OpenCV/MediaPipe for the computer vision.
 
-
-
 ---
 
 ## 🌟 Core Features
@@ -34,5 +32,38 @@ Using your webcam, this program identifies your hand and translates your swipe g
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/tyrobro/Gesture-Controlled-Snake-Game.git](https://github.com/tyrobro/Gesture-Controlled-Snake-Game.git)
+git clone https://github.com/tyrobro/Gesture-Controlled-Snake-Game.git
 cd Gesture-Controlled-Snake-Game
+```
+
+### 2. Create and Activate a Virtual Environment
+```bash
+# Create the environment
+python3 -m venv venv
+
+# Activate it (on macOS/Linux)
+source venv/bin/activate
+```
+
+### 3. Install the Required Libraries
+
+All the necessary packages are in one simple command:
+```bash
+pip install pygame opencv-python mediapipe
+```
+
+---
+
+## 🎮 How to Play
+
+1. Run the main script from your terminal:
+```bash
+python3 main.py
+```
+
+2. Two windows will open: the game window and your camera feed.
+3. The game window will show a "Press Space to Start" message.
+4. Position your hand in the camera frame until you see the white landmark skeleton drawn over it.
+5. Click on the game window to make it the active window, then press the Spacebar to begin the game.
+6. Move the snake by swiping your hand in the desired direction. A short, quick swipe works best!
+7. To quit the game, you can either click the 'X' on the game window or press 'q' while the camera window is active.
